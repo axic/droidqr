@@ -11,7 +11,7 @@ Usage
 
 ```java
 // get QR Android Bitmap from test using defaults
-QRCode.from("Hello World").to(ImageType.PNG).bitmap();
+QRCode.from("Hello World").bitmap();
 
 // get QR file from text using defaults
 File file = QRCode.from("Hello World").file();
