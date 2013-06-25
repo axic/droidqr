@@ -9,6 +9,7 @@ but changed to suit Android.
 Usage
 =====
 
+```java
 // get QR Android Bitmap from test using defaults
 QRCode.from("Hello World").to(ImageType.PNG).bitmap();
 
@@ -32,7 +33,7 @@ QRCode.from("Hello World").to(ImageType.GIF).withSize(250, 250).stream();
 
 // supply own outputstream
 QRCode.from("Hello World").to(ImageType.PNG).writeTo(outputStream);
-
+```
 
 
 License
