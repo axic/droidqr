@@ -1,8 +1,9 @@
-droidqr
+DroidQR
 =======
 
-Simple QRcode generator wrapper for Android based on https://github.com/kenglxn/QRGen
-but changed to suit Android.
+Simple QRcode generator wrapper for Android using ZXing (http://code.google.com/p/zxing/).
+
+DroidQR is based on https://github.com/kenglxn/QRGen, but changed to suit Android and remove any dependency on J2SE.
 
 
 
@@ -11,7 +12,7 @@ Usage
 
 ```java
 // get QR Android Bitmap from test using defaults
-QRCode.from("Hello World").bitmap();
+Bitmap bitmap = QRCode.from("Hello World").bitmap();
 
 // get QR file from text using defaults
 File file = QRCode.from("Hello World").file();
